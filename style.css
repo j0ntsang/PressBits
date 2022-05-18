@@ -76,6 +76,7 @@ html {
 	border: 0;
 	cursor: pointer;
 }
+
 .navigation__open-button {
 	margin-right: 16px;
 }
@@ -101,10 +102,19 @@ html {
 	opacity: 0;
 	z-index: 0;
 	pointer-events: none;
+	transform: scale(0, 0);
+	transform-origin: calc(100% - 40px) 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.navigation__menu {
+		transition: transform 100ms ease-in-out;
+	}
 }
 
 .navigation__menu--open {
 	opacity: 1;
+	transform: scale(1, 1);
 	z-index: 1;
 	pointer-events: all;
 }
@@ -126,8 +136,11 @@ html {
 	display: block;
 }
 
+.navigation .menu-item a:active,
+.navigation .menu-item a:link,
 .navigation .menu-item a:focus,
-.navigation .menu-item a:hover {
+.navigation .menu-item a:hover,
+.navigation .menu-item a:visited {
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -241,6 +254,7 @@ html {
 }
 
 @media (min-width: 768px) {
+
 	.call-to-action__decorative-picture,
 	.call-to-action__content {
 		width: 100%;
@@ -387,4 +401,3 @@ html {
 		transition: height 200ms ease-in-out;
 	}
 }
-
