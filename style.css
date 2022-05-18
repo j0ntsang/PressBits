@@ -181,18 +181,37 @@ html {
 
 .call-to-action--hero .call-to-action__content {
 	padding-top: 152px;
-	padding-bottom: 120px;
 }
 
 @media (min-width: 768px) {
 	.call-to-action--hero .call-to-action__content {
 		padding-top: 240px;
+		padding-bottom: 120px;
 	}
 }
 
 @media (prefers-reduced-motion: no-preference) {
 	.call-to-action--hero .call-to-action__content {
 		transition: padding 100ms ease-in-out;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.call-to-action--hero .call-to-action__decorative-picture {
+		max-width: 220px;
+		flex: 0 0 220px;
+	}
+
+	.call-to-action--hero .call-to-action__decorative-image {
+		height: 100%;
+		object-position: left;
+	}
+
+	.call-to-action--hero .call-to-action__content {
+		width: 100%;
+		max-width: none;
+		flex: 0 0 calc(100% - 220px);
 	}
 }
 
@@ -209,8 +228,33 @@ html {
 
 @media (min-width: 768px) {
 	.call-to-action--feature .call-to-action__wrapper {
-		padding-top: 200px;
-		padding-bottom: 200px;
+		padding-top: 160px;
+		padding-bottom: 160px;
+	}
+}
+
+@media (max-width: 767px) {
+	.call-to-action--feature .call-to-action__wrapper {
+		padding-bottom: 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.call-to-action--feature .call-to-action__decorative-picture {
+		max-width: 220px;
+		flex: 0 0 220px;
+	}
+
+	.call-to-action--feature .call-to-action__decorative-image {
+		height: 100%;
+		object-position: right;
+	}
+
+	.call-to-action--feature .call-to-action__content {
+		width: 100%;
+		max-width: none;
+		flex: 0 0 calc(100% - 220px);
 	}
 }
 
@@ -244,6 +288,19 @@ html {
 	z-index: -1;
 }
 
+.call-to-action__background:after {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: .5;
+	content: '';
+	z-index: 2;
+}
+
 .call-to-action__background-image {
 	position: absolute;
 	top: 0;
@@ -253,7 +310,7 @@ html {
 	object-fit: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 	.call-to-action__decorative-picture,
 	.call-to-action__content {
@@ -263,19 +320,34 @@ html {
 	}
 }
 
+.call-to-action__content {
+	width: 100%;
+}
+
 .call-to-action__decorative-picture {
 	display: flex;
 	position: relative;
 }
 
+@media (max-width: 767px) {
+	.call-to-action__decorative-picture {
+		order: 2;
+	}
+}
+
 .call-to-action__decorative-image {
 	display: block;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+}
+
+@media (min-width: 768px) {
+	.call-to-action__decorative-image {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 .call-to-action__content--left {

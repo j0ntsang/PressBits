@@ -115,17 +115,21 @@
             <a class="call-to-action__button call-to-action__button--secondary" href="#learn-more">Learn More</a>
           </aside>
         </div>
-        <picture class="call-to-action__decorative-picture">
-          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad.png" media="(min-width: 800px)">
-          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad.png" alt="" />
+        <picture class="call-to-action__decorative-picture" aria-hidden="true">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad.png" media="(min-width: 992px)" type="image/png">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_2.png" media="(min-width: 768px)" type="image/png">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_3.png" type="image/png">
+          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_3.png" alt="" />
         </picture>
       </div>
     </section>
     <section class="call-to-action call-to-action--feature" data-section-theme="light">
       <div class="call-to-action__wrapper">
-        <picture class="call-to-action__decorative-picture">
-          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile.png" media="(min-width: 800px)">
-          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile.png" alt="" />
+        <picture class="call-to-action__decorative-picture" aria-hidden="true">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile.png" media="(min-width: 992px)" type="image/png">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_2.png" media="(min-width: 768px)" type="image/png">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_3.png" type="image/png">
+          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_3.png" alt="" />
         </picture>
         <div class="call-to-action__content call-to-action__content--right">
           <span class="call-to-action__eyebrow">Eyebrow</span>
@@ -143,8 +147,10 @@
           <a class="call-to-action__button call-to-action__button--primary" href="#contact-us">Contact Us</a>
         </div>
         <picture class="call-to-action__background" aria-hidden="true">
-          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone.jpg">
-          <img class="call-to-action__background-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone.jpg" />
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone.png" media="(min-width: 992px)" type="image/png">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_2.png" media="(min-width: 768px)" type="image/png">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_3.png" type="image/png">
+          <img class="call-to-action__background-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_3.png" alt="" />
         </picture>
       </div>
     </section>
