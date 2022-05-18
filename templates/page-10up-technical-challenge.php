@@ -40,8 +40,8 @@
  * with our exercises. If you don't have time to finish every aspect of the project,
  * just make sure the parts you do finish are complete and set our expectations.
  *
- * It's perfectly fine to simply describe a few changes / enhnacements you're aware of
- * * that you'd work on with more time.
+ * It's perfectly fine to simply describe a few changes / enhancements you're aware of
+ * that you'd work on with more time.
  *
  * Please include all source and build process configuration files in your submission.
  *
