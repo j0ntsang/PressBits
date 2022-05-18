@@ -397,8 +397,14 @@ html {
 }
 
 .call-to-action__heading--hero {
-	font-size: 64px;
+	font-size: 48px;
 	font-weight: 700;
+}
+
+@media (min-width: 768px) {
+	.call-to-action__heading--hero {
+		font-size: 64px;
+	}
 }
 
 .call-to-action__description {
