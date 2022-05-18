@@ -77,6 +77,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+  <title><?php echo get_bloginfo('name'); ?></title>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -89,15 +90,15 @@
 <body class="body">
   <header class="header">
     <a class="logo" href="<?php echo get_bloginfo('wpurl'); ?>" aria-label="Go back to the Home page">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/site_logo.svg" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/site_logo.svg" alt="" role="presentation" />
     </a>
     <div class="navigation">
     <button class="navigation__open-button" aria-label="Open navigation menu">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/Icon:Menu.svg" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/Icon:Menu.svg" alt="" role="presentation" />
     </button>
     <nav class="navigation__menu">
       <button class="navigation__close-button" aria-label="Close navigation menu">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/Icon:Close.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/Icon:Close.svg" alt="" role="presentation" />
       </button>
       <?php wp_nav_menu(array('theme_location' => '10up_navigation')); ?>
     </nav>
@@ -119,7 +120,7 @@
         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad.png" media="(min-width: 992px)" type="image/png">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_2.png" media="(min-width: 768px)" type="image/png">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_3.png" type="image/png">
-          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_3.png" alt="" />
+          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Ipad_3.png" alt="" role="presentation" />
         </picture>
       </div>
     </section>
@@ -129,7 +130,7 @@
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile.png" media="(min-width: 992px)" type="image/png">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_2.png" media="(min-width: 768px)" type="image/png">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_3.png" type="image/png">
-          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_3.png" alt="" />
+          <img class="call-to-action__decorative-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Device_Mobile_3.png" alt="" role="presentation" />
         </picture>
         <div class="call-to-action__content call-to-action__content--right">
           <span class="call-to-action__eyebrow">Eyebrow</span>
@@ -150,14 +151,14 @@
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone.png" media="(min-width: 992px)" type="image/png">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_2.png" media="(min-width: 768px)" type="image/png">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_3.png" type="image/png">
-          <img class="call-to-action__background-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_3.png" alt="" />
+          <img class="call-to-action__background-image" src="<?php echo get_template_directory_uri(); ?>/assets/10up/images/Phone_3.png" alt="" role="presentation" />
         </picture>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo" href="https://10up.com/" target="_blank">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/10up_Logo.svg" />
+    <a class="footer__logo" href="https://10up.com/" target="_blank" aria-label="Click to go to 10up website">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/10up/icons/10up_Logo.svg" role="presentation" />
     </a>
   </footer>
   <?php wp_footer(); ?>
